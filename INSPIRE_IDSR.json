@@ -1,0 +1,219 @@
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "MedicalStudy",
+    "@studyDesign": {
+        "@type": "MedicalObservationalStudyDesign"
+    },
+    "name": "Integrated Disease Surveillance and Response (IDSR) Covid-19",
+    "sponsor": {
+        "@type": "Organization",
+        "name": "IDRC AI4COVID"
+    },
+    "url": "https://aphrc.org/inspire/",
+    "studyLocation": [
+        {
+            "@type": "Country",
+            "name": "Malawi"
+        },
+        {
+            "@type": "Country",
+            "name": "Kenya"
+        },
+        {
+            "@type": "Country",
+            "name": "Uganda"
+        }
+    ],
+    "hasPart": {
+        "@type": "Database",
+        "schema:name": "IDSR-COVID-19",
+        "description": "A synthetic dataset in OMOP CDM format for COVID-19 surveillance and response in IDSR countries",
+        "url": "51.105.33.160",
+        "includedInDataCatalog": {
+            "@type": "DataCatalog",
+            "name": "OHDSI OMOP Common Data Model",
+            "description": "The OMOP Common Data Model (CDM) is a standardized data model for observational health databases.",
+            "schema:value": "5.4",
+            "keywords": ["OMOP CDM", "COVID-19", "Surveillance", "Response", "Vaccine","Specimen"]
+
+        },
+        "hasPart": [
+            {
+                "@type": "table:person",
+                "name": "OMOP CDM Person table",
+                "description": "OMOP CDM Person table for IDSR synthetic data"
+            },
+            {
+                "@type": "table:observation",
+                "name": "OMOP CDM observation table",
+                "description": "OMOP CDM observation table for IDSR synthetic data"
+            },
+            {
+                "@type": "table:specimen",
+                "name": "specimen",
+                "description": "OMOP CDM specimen table for IDSR synthetic data"
+            },
+            {
+                "@type": "table:visit_occurrence",
+                "name": "visit_occurrence",
+                "description": "OMOP CDM visit occurrence table for IDSR synthetic data"
+            },
+            {
+                "@type": "table:care_site",
+                "name": "care_site",
+                "description": "OMOP CDM care site table for IDSR synthetic data"
+            },
+            {
+                "@type": "table:condition_occurrence",
+                "name": "condition_occurrence",
+                "description": "OMOP CDM condition occurrence table for IDSR synthetic data"
+            },
+            {
+                "@type": "table:drug_exposure",
+                "name": "drug_exposure",
+                "description": "OMOP CDM drug exposure table for IDSR synthetic data"
+            },
+            {
+                "@type": "table:location",
+                "name": "location",
+                "description": "OMOP CDM location table for IDSR synthetic data"
+            },
+            {
+                "@type": "table:measurement",
+                "name": "measurement",
+                "description": "OMOP CDM measurement table for IDSR synthetic data"
+            }
+        ]
+
+    },
+        "omop:vocabularies": [
+            {
+                "@id": "concept:1585847",
+                "@type": "schema:MedicalEntity",
+                "code": {
+                    "@type": "schema:MedicalCode",
+                    "codeValue": "8507",
+                    "codingSystem": "OMOP Gender",
+                    "description": "The biological classification of individuals as male"
+                },
+                "name": "male"
+            },
+
+            {
+                "@id": "concept:1585847",
+                "@type": "schema:MedicalEntity",
+                "code": {
+                    "@type": "schema:MedicalCode",
+                    "codeValue": "8532",
+                    "codingSystem": "OMOP Gender",
+                    "description": "The biological classification of individuals as female"
+                },
+                "name": "female"
+            },
+
+            {
+                "@id": "omop:8515",
+                "@type": "schema:MedicalCondition",
+                "code": {
+                  "@type": "schema:MedicalCode",
+                  "codeValue": "8515",
+                  "codingSystem": "OMOP Ethnicity"
+                },
+                "name": "Black or African American"
+              },
+              {
+                "@id": "omop:38003564",
+                "@type": "schema:MedicalCondition",
+                "code": {
+                  "@type": "schema:MedicalCode",
+                  "codeValue": "38003564",
+                  "codingSystem": "OMOP Ethnicity"
+                },
+                "name": "White"
+              },
+              {
+                "@id": "omop:38003563",
+                "@type": "schema:MedicalCondition",
+                "code": {
+                  "@type": "schema:MedicalCode",
+                  "codeValue": "38003563",
+                  "codingSystem": "OMOP Ethnicity"
+                },
+                "name": "Unknown"
+              },
+              {
+                "@id": "omop:38003566",
+                "@type": "schema:MedicalCondition",
+                "code": {
+                  "@type": "schema:MedicalCode",
+                  "codeValue": "38003566",
+                  "codingSystem": "OMOP Ethnicity"
+                },
+                "name": "Other"
+
+            },
+            {
+                "@id": "omop:8516",
+                "@type": "schema:MedicalCondition",
+                "code": {
+                  "@type": "schema:MedicalCode",
+                  "codeValue": "8516",
+                  "codingSystem": "OMOP Race"
+                },
+                "name": "Asian"
+              },
+              {
+                "@id": "omop:8515",
+                "@type": "schema:MedicalCondition",
+                "code": {
+                  "@type": "schema:MedicalCode",
+                  "codeValue": "8515",
+                  "codingSystem": "OMOP Race"
+                },
+                "name": "Black or African American"
+              },
+              {
+                "@id": "omop:8527",
+                "@type": "schema:MedicalCondition",
+                "code": {
+                  "@type": "schema:MedicalCode",
+                  "codeValue": "8527",
+                  "codingSystem": "OMOP Race"
+                },
+                "name": "Hispanic or Latino"
+              },
+              {
+                "@id": "omop:8552",
+                "@type": "schema:MedicalCondition",
+                "code": {
+                  "@type": "schema:MedicalCode",
+                  "codeValue": "8552",
+                  "codingSystem": "OMOP Race"
+                },
+                "name": "White"
+              },
+              {
+                "@id": "omop:8557",
+                "@type": "schema:MedicalCondition",
+                "code": {
+                  "@type": "schema:MedicalCode",
+                  "codeValue": "8557",
+                  "codingSystem": "OMOP Race"
+                },
+                "name": "Other"
+              }
+ 
+
+                ]
+
+
+            
+            }
+        ]
+    }
+    </script>
+    
+
+
+
